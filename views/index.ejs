@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- we can access the object's properties passed to our view through the below syntax -->
+    <!-- Hi <%= text%> -->
+
+    <!-- the object passed is referred to as locals -->
+    <!-- we can also access the text property without specifying locals as we
+    did in the above example but its better to use locals because if text property
+    did not existed then we would get error in the above example. Here, however, 
+    we get an undefined returned to us. -->
+    Hi <%= locals.text || 'Default' %>
+  </body>
+</html>
